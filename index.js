@@ -107,8 +107,9 @@ module.exports = Float = function (opts) {
     };
     
     var People = require('./lib/people');
-    
+    var Tasks = require('./lib/tasks');
     this.People = new People(this);
+    this.Tasks = new Tasks(this);
     
     return this;
 };

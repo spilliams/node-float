@@ -11,15 +11,13 @@ A Node module for interacting with Float Scheduler's API.
     var Float = require('float-scheduler');
     var float = new Float({token: "my-float-api-token", user_agent: "My App <contact@myapp.com>"});
 
-### Configuration
-
 You must pass in a `token` and `user_agent` when constructing a Float object.
 
 You get your token from the Float dashboard (of an administrator).
 
 The user-agent string is for Float to identify who to contact in case of questions or concerns.
 
-You may pass in a `debug` parameter as well.
+You may pass in a `debug` parameter as well, to get more console output.
 
 ## Endpoints
 
@@ -35,8 +33,9 @@ For example:
         console.log(data);
     });
 
-Current endpoints are:
+For more detail on specific endpoints and parameters, check out the [wiki page](https://github.com/spilliams/node-float/wiki/Endpoints).
 
-- People
-    - list: takes no data, returns a list of people
-    - get: takes an id, returns a person
+##Other Stuff
+
+- Published to [npm](https://www.npmjs.com/package/float-scheduler) under the ISC license
+- see [Changelog](https://github.com/spilliams/node-float/wiki/Changelog) for versioning information.
