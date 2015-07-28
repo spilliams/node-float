@@ -47,6 +47,7 @@ Other ideas?
 
 ## Other Stuff
 
+- Implementation mimics that of [harvest](https://github.com/log0ymxm/node-harvest).
 - Published to [npm](https://www.npmjs.com/package/float-scheduler) under the ISC license
 - see [Changelog](https://github.com/spilliams/node-float/wiki/Changelog) for versioning information.
 - Does your app use this module? Let me know!
