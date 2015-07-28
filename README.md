@@ -1,4 +1,4 @@
-# node-float
+# Float Scheduler
 
 A Node module for interacting with Float Scheduler's API.
 
