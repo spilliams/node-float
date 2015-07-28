@@ -35,7 +35,7 @@ For example:
 
 For more detail on specific endpoints and parameters, check out the [wiki page](https://github.com/spilliams/node-float/wiki/Endpoints).
 
-##Other Stuff
+## Other Stuff
 
 - Published to [npm](https://www.npmjs.com/package/float-scheduler) under the ISC license
 - see [Changelog](https://github.com/spilliams/node-float/wiki/Changelog) for versioning information.
