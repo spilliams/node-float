@@ -11,8 +11,9 @@
     "url": "git+https://github.com/spilliams/node-float.git"
   },
   "keywords": [
-    "Float",
-    "Scheduler"
+    "float",
+    "scheduler",
+    "schedule"
   ],
   "author": "Spencer Williams <s@spencerenglish.com> (http://spencerenglish.com)",
   "license": "ISC",

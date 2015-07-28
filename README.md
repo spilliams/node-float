@@ -1,17 +1,17 @@
-#node-float
+# node-float
 
 A Node module for interacting with Float Scheduler's API.
 
-##Installation
+## Installation
 
     npm install node-float
     
-##Usage
+## Usage
 
     var Float = require('node-float');
     var float = new Float({token: "my-float-api-token", user_agent: "My App <contact@myapp.com>"});
 
-###Configuration
+### Configuration
 
 You must pass in a `token` and `user_agent` when constructing a Float object.
 
@@ -21,7 +21,7 @@ The user-agent string is for Float to identify who to contact in case of questio
 
 You may pass in a `debug` parameter as well.
 
-##Endpoints
+## Endpoints
 
 Endpoints are each set up to take a parameters object and a callback. Unless otherwise noted, the callback will provide an error object and a data object.
 
