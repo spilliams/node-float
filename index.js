@@ -14,7 +14,7 @@ module.exports = function (opts) {
   
   this.token = opts.token;
   this.user_agent = opts.user_agent;
-  this.debug = opts.debug || true;
+  this.debug = opts.debug || false;
   
   var restService = restler.service(function (token) {
     this.defaults.token = token;
