@@ -1,15 +1,14 @@
 var restler = require('restler'),
   querystring = require('querystring'),
-  _isUndefined = require('./mixin'),
-  Float;
+  mixin = require('./lib/mixin');
 
-module.exports = Float = function (opts) {
+module.exports = function (opts) {
   var self = this;
   
-  if (_isUndefined(opts, 'token')) {
+  if (mixin.isUndefined(opts, 'token')) {
     throw new Error('Please pass an API token in the opts object');
   }
-  if (_isUndefined(opts, 'user_agent')) {
+  if (mixin.isUndefined(opts, 'user_agent')) {
     throw new Error('Please pass a user_agent in the opts object');
   }
   
@@ -105,11 +104,10 @@ module.exports = Float = function (opts) {
       self.processRequest(self.service.run('delete', url, data), callback);
     }
   };
-
-  var People = require('./lib/people');
-  var Tasks = require('./lib/tasks');
-  this.People = new People(this);
-  this.Tasks = new Tasks(this);
-
+  
+  var Generic = require('./lib/generic');
+  this.People = new Generic(this, "people");
+  this.Tasks = new Generic(this, "tasks");
+  
   return this;
 };
