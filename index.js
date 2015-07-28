@@ -18,12 +18,9 @@ module.exports = Float = function (opts) {
     this.debug = opts.debug || true;
     
     var restService = restler.service(function (token) {
-        if (self.debug) {
-            console.log("constructor? token "+token);
-        }
         this.defaults.token = token;
     }, {
-        baseURL: "https://api.floatschedule.com/api/v1"
+        baseURL: "https://api.floatschedule.com"
     }, {
         run: function (type, url, data) {
             if (self.debug) {
