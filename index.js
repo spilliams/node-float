@@ -110,7 +110,7 @@ module.exports = function (opts) {
   this.People = new Generic(this, "people");
   this.Tasks = new Generic(this, "tasks");
   this.Holidays = new Generic(this, "holidays");
-  this.milestones = new Generic(this, "milestones");
+  this.Milestones = new Generic(this, "milestones");
   
   return this;
 };
