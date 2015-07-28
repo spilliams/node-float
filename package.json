@@ -1,0 +1,27 @@
+{
+  "name": "float-scheduler",
+  "version": "0.0.0",
+  "description": "Float Scheduler API client library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spilliams/node-float.git"
+  },
+  "keywords": [
+    "Float",
+    "Scheduler"
+  ],
+  "author": "Spencer Williams <s@spencerenglish.com> (http://spencerenglish.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spilliams/node-float/issues"
+  },
+  "homepage": "https://github.com/spilliams/node-float#readme",
+  "dependencies": {
+    "querystring": "^0.2.0",
+    "restler": "^3.3.0"
+  }
+}
