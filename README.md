@@ -4,11 +4,11 @@ A Node module for interacting with Float Scheduler's API.
 
 ## Installation
 
-    npm install node-float
+    npm install float-scheduler
     
 ## Usage
 
-    var Float = require('node-float');
+    var Float = require('float-scheduler');
     var float = new Float({token: "my-float-api-token", user_agent: "My App <contact@myapp.com>"});
 
 ### Configuration
