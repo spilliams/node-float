@@ -1,6 +1,6 @@
 # Float Scheduler
 
-A Node module for interacting with Float Scheduler's API.
+A Node module for interacting with [Float Scheduler's API](https://github.com/floatschedule/api).
 
 ## Installation
 
@@ -35,7 +35,19 @@ For example:
 
 For more detail on specific endpoints and parameters, check out the [wiki page](https://github.com/spilliams/node-float/wiki/Endpoints).
 
+## Roadmap
+
+Planned features for v1.0.0
+
+- complete access to all endpoints of Float API
+
+Other ideas?
+
+- rate-limit-monitor. Float's limit is 200 req/min.
+
 ## Other Stuff
 
 - Published to [npm](https://www.npmjs.com/package/float-scheduler) under the ISC license
 - see [Changelog](https://github.com/spilliams/node-float/wiki/Changelog) for versioning information.
+- Does your app use this module? Let me know!
+- Problem with this module? Submit an [Issue](https://github.com/spilliams/node-float/issues) or a [Pull Request](https://github.com/spilliams/node-float/pulls).
