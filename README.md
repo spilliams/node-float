@@ -35,16 +35,6 @@ For example:
 
 For more detail on specific endpoints and parameters, check out the [wiki page](https://github.com/spilliams/node-float/wiki/Endpoints).
 
-## Roadmap
-
-Planned features for v1.0.0
-
-- complete access to all endpoints of Float API
-
-Other ideas?
-
-- rate-limit-monitor. Float's limit is 200 req/min.
-
 ## Other Stuff
 
 - Implementation mimics that of [harvest](https://github.com/log0ymxm/node-harvest).

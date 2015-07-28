@@ -1,6 +1,6 @@
 {
   "name": "float-scheduler",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Float Scheduler API client library",
   "main": "index.js",
   "scripts": {
