@@ -2,6 +2,8 @@
 
 A Node module for interacting with [Float Scheduler's API](https://github.com/floatschedule/api).
 
+[![NPM](https://nodei.co/npm/float-scheduler.png)](https://nodei.co/npm/float-scheduler/)
+
 ## Installation
 
     npm install float-scheduler
