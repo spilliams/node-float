@@ -1,6 +1,6 @@
 var restler = require('restler'),
-  querystring = require('querystring'),
-  mixin = require('./lib/mixin');
+    querystring = require('querystring'),
+    mixin = require('./lib/mixin');
 
 module.exports = function (opts) {
   var self = this;
@@ -15,6 +15,7 @@ module.exports = function (opts) {
   this.token = opts.token;
   this.user_agent = opts.user_agent;
   this.debug = opts.debug || false;
+  this.log_requests = opts.log_requests || this.debug;
   
   var restService = restler.service(function (token) {
     this.defaults.token = token;
@@ -22,8 +23,8 @@ module.exports = function (opts) {
     baseURL: "https://api.floatschedule.com"
   }, {
     run: function (type, url, data) {
-      if (self.debug) {
-        console.log('run', type, url, data);
+      if (self.log_requests) {
+        console.log(mixin.logTimeStamp() + ' [float-scheduler] ' + type.toUpperCase() + ' ' + url);
       }
       
       var opts = {};

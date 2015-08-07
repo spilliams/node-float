@@ -19,6 +19,8 @@ The user-agent string is for Float to identify who to contact in case of questio
 
 You may pass in a `debug` parameter as well, to get more console output.
 
+If you don't need `debug` info but do want request logging, pass in a `log_requests` parameter.
+
 ## Endpoints
 
 Endpoints are each set up to take a parameters object and a callback. Unless otherwise noted, the callback will provide an error object and a data object.
