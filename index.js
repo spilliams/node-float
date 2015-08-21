@@ -108,6 +108,7 @@ module.exports = function (opts) {
   
   var Generic = require('./lib/generic');
   this.Projects = new Generic(this, "projects");
+  this.Clients = new Generic(this, "clients");
   this.People = new Generic(this, "people");
   this.Tasks = new Generic(this, "tasks");
   this.Holidays = new Generic(this, "holidays");
