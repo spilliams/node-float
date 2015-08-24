@@ -6,10 +6,10 @@ module.exports = function (opts) {
   var self = this;
   
   if (mixin.isUndefined(opts, 'token')) {
-    throw new Error('Please pass an API token in the opts object');
+    throw new Error('Please provide a `token` in the opts object');
   }
   if (mixin.isUndefined(opts, 'user_agent')) {
-    throw new Error('Please pass a user_agent in the opts object');
+    throw new Error('Please provide a `user_agent` in the opts object');
   }
   
   this.token = opts.token;

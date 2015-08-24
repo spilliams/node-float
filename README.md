@@ -21,20 +21,22 @@ The user-agent string is for Float to identify who to contact in case of questio
 
 You may pass in a `debug` parameter as well, to get more console output.
 
-If you don't need `debug` info but do want request logging, pass in a `log_requests` parameter.
+If you don't need `debug` info but do want request logging, pass in a `log_requests` parameter. API request logs will be of the following format (tokens in angle brackets, all other characters literal):
+
+    <YYYY>-<MM>-<DD> <HH>:<MM>:<SS>.<mmmm> [float-scheduler] <HTTP_METHOD> <URL>
 
 ## Endpoints
 
 Endpoints are each set up to take a parameters object and a callback. Unless otherwise noted, the callback will provide an error object and a data object.
 
-For example:
+For example, list all People by calling:
 
-    float.People.list({}, function(err, data) {
-        if (err) {
-            console.log(err);
-            throw new Error(err);
+    float.People.list({}, function(error, response_data) {
+        if (error) {
+            console.log(error);
+            throw new Error(error);
         }
-        console.log(data);
+        console.log(response_data);
     });
 
 For more detail on specific endpoints and parameters, check out the [wiki page](https://github.com/spilliams/node-float/wiki/Endpoints).
@@ -43,6 +45,6 @@ For more detail on specific endpoints and parameters, check out the [wiki page](
 
 - Implementation mimics that of [harvest](https://github.com/log0ymxm/node-harvest).
 - Published to [npm](https://www.npmjs.com/package/float-scheduler) under the ISC license
-- see [Changelog](https://github.com/spilliams/node-float/wiki/Changelog) for versioning information.
+- see [Changelog](https://github.com/uncorked/node-float/wiki/Changelog) for versioning information.
 - Does your app use this module? Let me know!
-- Problem with this module? Submit an [Issue](https://github.com/spilliams/node-float/issues) or a [Pull Request](https://github.com/spilliams/node-float/pulls).
+- Problem with this module? Submit an [Issue](https://github.com/uncorked/node-float/issues) or a [Pull Request](https://github.com/uncorked/node-float/pulls).

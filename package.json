@@ -1,6 +1,6 @@
 {
   "name": "float-scheduler",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Float Scheduler API client library",
   "main": "index.js",
   "scripts": {
@@ -15,12 +15,15 @@
     "scheduler",
     "schedule"
   ],
-  "author": "Spencer Williams <s@spencerenglish.com> (http://spencerenglish.com)",
+  "author": "Uncorked Studios",
+  "contributors": [
+    "Spencer Williams <s@spencerenglish.com> (http://spencerenglish.com)"
+  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/spilliams/node-float/issues"
+    "url": "https://github.com/uncorked/node-float/issues"
   },
-  "homepage": "https://github.com/spilliams/node-float#readme",
+  "homepage": "https://github.com/uncorked/node-float#readme",
   "dependencies": {
     "querystring": "^0.2.0",
     "restler": "^3.3.0"
